@@ -1,7 +1,12 @@
-name: my-app
-type: web
-buildCommand: npm run build
-startCommand: npm start
+name: restaurant-vue
+type: web service
+steps:
+  - name: Install dependencies
+    command: npm install
+  - name: Build
+    command: yarn build
+buildCommand: yarn build
+startCommand: yarn start
 env:
   - key: NODE_ENV
     value: production

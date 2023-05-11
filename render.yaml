@@ -1,0 +1,7 @@
+name: my-app
+type: web
+buildCommand: npm run build
+startCommand: npm start
+env:
+  - key: NODE_ENV
+    value: production

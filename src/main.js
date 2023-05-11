@@ -6,7 +6,7 @@ import router from "./router/index.js";
 import VeeValidatePlugin from "./includes/validation.js";
 import axios from 'axios';
 
-//axios.defaults.baseURL = 'https://younger-four.codedamn.app:1338/api/';
+axios.defaults.baseURL = 'api/';
 const token = localStorage.getItem('token')
 axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
 const app = createApp(App);

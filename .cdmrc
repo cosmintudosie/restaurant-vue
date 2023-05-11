@@ -1,0 +1,4 @@
+tabs: ['src/App.vue']
+terminal-one: |
+    yarn install
+    yarn dev

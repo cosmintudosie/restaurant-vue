@@ -5,7 +5,7 @@ const { MongoClient, ObjectId } = require('mongodb')
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 dotenv.config({ path: "../../config.env" });
-const databaseUrl = 'mongodb+srv://koko:939081@cluster0.niomvul.mongodb.net/restaurant?retryWrites=true&w=majority'
+const databaseUrl = process.env.DATABASE
 
 
 

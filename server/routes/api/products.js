@@ -3,7 +3,7 @@ const mongodb = require("mongodb");
 const dotenv = require("dotenv");
 dotenv.config({ path: "../../config.env" });
 const router = express.Router();
-const databaseUrl = 'mongodb+srv://koko:939081@cluster0.niomvul.mongodb.net/restaurant?retryWrites=true&w=majority'
+const databaseUrl = process.env.DATABASE
 
 // Get Posts
 router.get("/", async (req, res) => {

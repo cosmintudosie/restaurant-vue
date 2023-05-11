@@ -13,7 +13,7 @@ dotenv.config({ path: "../../config.env" });
 app.use(cookieParser())
 app.use(cors())
 
-const databaseUrl = 'mongodb+srv://koko:939081@cluster0.niomvul.mongodb.net/restaurant?retryWrites=true&w=majority'
+const databaseUrl = process.env.DATABASE
 // Add User
 router.post("/", async (req, res) => {
 const newUser = req.body;

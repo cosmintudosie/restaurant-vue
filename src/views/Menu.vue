@@ -9,7 +9,7 @@
         v-for="category in categories"
         :key="category.title"
       >
-        <img :src="'../src/img/' + category.src" />
+        <img :src="'../assets/img/' + category.src" />
         <h3 class="motto" id="Ciorbe">{{ category.title }}</h3>
       </router-link >
     </div>

@@ -2,7 +2,7 @@
   <div class="card presentationCard">
     <button class="close-button" @click="onCloseCard">X</button>
     <h1>{{ dish.title }}</h1>
-    <img src="../img/beefsoup.jpg" />
+    <img src="../assets/beefsoup.jpg" />
     <ul>
       Ingredients:
       {{
